@@ -13,10 +13,12 @@
         <div class="header m-4">
             <h1 class="logo me-auto me-lg-0">
                 <a href="index.html" class="bg-whight">
-                    Kesar Creatives 
+                    {{logoTitle}}
                 </a>
             </h1>
-            <span >Create Your Business Software</span>
+            <span>
+                {{logoSubtitle}}
+            </span>
 
         </div>
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -24,19 +26,19 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Tech Team</a></li>
-                <li><a href="#">Career</a></li>
-                </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="#">Services</a></li>
-            <li><a class="nav-link scrollto" href="http://kcss.in/chrcha/">www.chrcha.in</a></li>
-            <li><a class="nav-link scrollto " href="#">Blog</a></li>
-            <li><a class="nav-link scrollto" href="#">Contact Us</a></li>
+                <li *ngFor="let item of menuItems"  [class.dropdown] = "item.subitem">
+                    <a  href="{{item.href}}" [ngClass]="{'nav-link':!item.subitem,'scrollto':!item.subitem}">
+                        <span> {{ item.label }} </span>
+                        <i *ngIf="item.subitem" class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul *ngIf="item.subitem">
+                        <li *ngFor="let subitem of item.children">
+                            <a href="{{subitem.href}}">
+                                {{ subitem.label }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -45,4 +47,6 @@
 
     </div>
 </header><!-- End Header -->
+
+
 
