@@ -54,5 +54,7 @@ export class HeaderComponent {
     }
    ];
    
+   bannerTitle = 'ALL YOUR NEEDS @ 1 PLACE'
+   bannerSubTitle = "You're having a business because you have goals. Here's how We can help you reach them!"
 
 }

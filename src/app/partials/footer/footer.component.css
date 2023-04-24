@@ -1,0 +1,7 @@
+.footer-contect div{
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
