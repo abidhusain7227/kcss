@@ -1,0 +1,13 @@
+.middle-content{
+    padding: 0 100px 0 100px;
+    width: 70%;
+}
+.btn {
+    padding: 15px;
+    background-color: #0d3c55;
+    color: white;
+    border-radius: 35px;
+}
+.btn:hover{
+    background-color: #ffc451;
+}

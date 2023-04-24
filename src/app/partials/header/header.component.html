@@ -1,0 +1,71 @@
+  <!-- ======= Header ======= -->
+<header id="header" class=" p-0">
+    <div class="top-header p-2">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <div>
+                Call us: 
+                <span>(+91) 90 167 43 155</span>
+            </div>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+      
+        </div>
+    </div>
+    <div class="container d-flex align-items-center justify-content-lg-between">
+        <div class="header m-2">
+            <h1 class="logo me-auto me-lg-0">
+                <a href="index.html" class="bg-whight">
+                    {{logoTitle}}
+                </a>
+            </h1>
+            <span>
+                {{logoSubtitle}}
+            </span>
+
+        </div>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li *ngFor="let item of menuItems"  [class.dropdown] = "item.subitem">
+                    <a  href="{{item.href}}" [ngClass]="{'nav-link':!item.subitem,'scrollto':!item.subitem}">
+                        <span> {{ item.label }} </span>
+                        <i *ngIf="item.subitem" class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul *ngIf="item.subitem">
+                        <li *ngFor="let subitem of item.children">
+                            <a href="{{subitem.href}}">
+                                {{ subitem.label }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a> -->
+
+    </div>
+</header><!-- End Header -->
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8 col-md-12">
+            <h1> {{ bannerTitle }}</h1>
+            <h2>{{ bannerSubTitle}} </h2>
+        </div>
+        </div>
+
+    </div>
+    </section><!-- End Hero -->
