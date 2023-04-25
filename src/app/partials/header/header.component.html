@@ -34,13 +34,13 @@
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                 <li *ngFor="let item of menuItems"  [class.dropdown] = "item.subitem">
-                    <a  href="{{item.href}}" [ngClass]="{'nav-link':!item.subitem,'scrollto':!item.subitem}">
+                    <a routerLink="{{item.href}}" [ngClass]="{'nav-link':!item.subitem,'scrollto':!item.subitem}">
                         <span> {{ item.label }} </span>
                         <i *ngIf="item.subitem" class="bi bi-chevron-down"></i>
                     </a>
                     <ul *ngIf="item.subitem">
                         <li *ngFor="let subitem of item.children">
-                            <a href="{{subitem.href}}">
+                            <a routerLink="{{subitem.href}}" >
                                 {{ subitem.label }}
                             </a>
                         </li>
@@ -55,17 +55,3 @@
     </div>
 </header><!-- End Header -->
 
-
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-6 col-lg-8 col-md-12">
-            <h1> {{ bannerTitle }}</h1>
-            <h2>{{ bannerSubTitle}} </h2>
-        </div>
-        </div>
-
-    </div>
-    </section><!-- End Hero -->

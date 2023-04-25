@@ -5,10 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PartialsModule } from './partials/partials.module';
+import { AboutUsComponent } from './page/about-us/about-us.component';
+import { PrivacyPolicyComponent } from './page/privacy-policy/privacy-policy.component';
+import { TechTeamComponent } from './page/tech-team/tech-team.component';
+import { CareerComponent } from './page/career/career.component';
+import { HeaderComponent } from './partials/header/header.component';
+import { FooterComponent } from './partials/footer/footer.component';
+import { MiddleSectionComponent } from './partials/middle-section/middle-section.component';
+import { ServicesComponent } from './page/services/services.component';
+import { BlogComponent } from './page/blog/blog.component';
+import { ContactUsComponent } from './page/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutUsComponent,
+    PrivacyPolicyComponent,
+    TechTeamComponent,
+    CareerComponent,
+    ServicesComponent,
+    BlogComponent,
+    ContactUsComponent
   ],
   imports: [
     PartialsModule,

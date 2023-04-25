@@ -11,3 +11,6 @@
 .btn:hover{
     background-color: #ffc451;
 }
+.bg-image{
+    background-image: url("../../../assets/img/home-sec-bg.jpg");
+}
