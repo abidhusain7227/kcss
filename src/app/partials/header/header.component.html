@@ -34,13 +34,23 @@
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                 <li *ngFor="let item of menuItems"  [class.dropdown] = "item.subitem">
-                    <a routerLink="{{item.href}}" [ngClass]="{'nav-link':!item.subitem,'scrollto':!item.subitem}">
+                    <a 
+                    routerLink="{{item.href}}" 
+                    [ngClass]="{'nav-link':!item.subitem,'scrollto':!item.subitem}"
+                    routerLinkActive="active" 
+                    [routerLinkActiveOptions]={exact:true} 
+                    >
                         <span> {{ item.label }} </span>
                         <i *ngIf="item.subitem" class="bi bi-chevron-down"></i>
                     </a>
                     <ul *ngIf="item.subitem">
                         <li *ngFor="let subitem of item.children">
-                            <a routerLink="{{subitem.href}}" >
+                            <a 
+                            routerLink="{{subitem.href}}"
+                            routerLinkActive="active" 
+                            [routerLinkActiveOptions]={exact:true} 
+                            
+                            >
                                 {{ subitem.label }}
                             </a>
                         </li>

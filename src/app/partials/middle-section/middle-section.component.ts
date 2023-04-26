@@ -48,4 +48,133 @@ export class MiddleSectionComponent {
       subtitle :'We have expertise in building user-friendly enterprise portals for internal use as well as web portals to be deployed in wide area networks.'
     }
   ]
+
+  technologyTitle='Technology Stack'
+  technologyImgs = [
+    {
+      img_bg:true,
+      img:'te_1.png'
+    },
+    {
+      img_bg:'',
+      img:'te_2.png'
+    },
+    {
+      img_bg:'',
+      img:'te_3.png'
+    },
+    {
+      img_bg:'',
+      img:'te_4.png'
+    },
+    {
+      img_bg:'',
+      img:'te_5.jpeg'
+    },
+    {
+      img_bg:'',
+      img:'te_6.png'
+    },
+    {
+      img_bg:true,
+      img:'te_7.png'
+    },
+    {
+      img_bg:'',
+      img:'te_8.png'
+    },
+    {
+      img_bg:'',
+      img:'te_9.png'
+    },
+    {
+      img_bg:'',
+      img:'te_10.png'
+    },
+    {
+      img_bg:'',
+      img:'te_11.png'
+    },
+    {
+      img_bg:'',
+      img:'te_12.jpeg'
+    },
+    {
+      img_bg:true,
+      img:'te_13.png'
+    },
+    {
+      img_bg:'',
+      img:'te_14.jpeg'
+    },
+    {
+      img_bg:'',
+      img:'te_15.jpeg'
+    },
+    {
+      img_bg:'',
+      img:'te_16.png'
+    },
+    {
+      img_bg:'',
+      img:'te_17.png'
+    },
+    {
+      img_bg:'',
+      img:'te_18.png'
+    },
+    {
+      img_bg:true,
+      img:'te_19.png'
+    },
+    {
+      img_bg:'',
+      img:'te_20.jpeg'
+    },
+    {
+      img_bg:'',
+      img:'te_21.jpeg'
+    },
+    {
+      img_bg:'',
+      img:'te_22.jpeg'
+    },
+    {
+      img_bg:'',
+      img:'te_23.jpeg'
+    },
+    {
+      img_bg:'',
+      img:'te_24.png'
+    },
+  ]
+
+  ourProductstitle='Our Products and Solutions';
+  ourProducts = [
+    {
+      img:'or_1.png',
+      title:'Custom Clearance System',
+    },
+    {
+      img:'or_2.png',
+      title:'Import-Export System',
+    },
+    {
+      img:'or_3.png',
+      title:'Customize Account System',
+    },
+    {
+      img:'or_4.png',
+      title:'eCommerce Portal',
+    },
+    {
+      img:'or_5.png',
+      title:'Kesar All In One Management System',
+    },
+    {
+      img:'or_6.png',
+      title:'Fullfilment and eProcurement Software',
+    },
+  ]
+
 }

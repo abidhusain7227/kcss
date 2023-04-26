@@ -14,3 +14,25 @@
 .bg-image{
     background-image: url("../../../assets/img/home-sec-bg.jpg");
 }
+.technology-title{
+    color: #006198;
+    font-weight: bold;
+    font-size: 40px;
+}
+.te-col{
+    width: 200px;
+    height: 155px;
+    text-align: center;
+    border: 1px solid #546c792e;
+}
+.te-col-bg{
+    background: #016198;
+}
+.te-img{
+    position: relative;
+    top: 35px;
+}
+.m-r-l-45{
+    margin-right: 45px;
+    margin-left: 45px;
+}
