@@ -664,8 +664,8 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  /* border: 1px solid #ebebeb; */
+  padding: 40px 80px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
@@ -673,8 +673,8 @@ section {
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
-  height: 64px;
-  background: #ffc451;
+  height: auto;
+  /* background: #ffc451; */
   border-radius: 4px;
   display: flex;
   align-items: center;

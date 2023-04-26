@@ -1,4 +1,18 @@
-<!-- ======= About Section ======= -->
+<!-- ======= banner Section ======= -->
+<section id="hero" class="d-flex align-items-center justify-content-center">
+  <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-xl-6 col-lg-8 col-md-12">
+          <h1> {{ bannerTitle }}</h1>
+          <h2>{{ bannerSubTitle}} </h2>
+      </div>
+      </div>
+
+  </div>
+</section><!-- End banner -->
+
+
 <section id="about" class="about">
     <div class="container" data-aos="fade-up">
 
@@ -9,9 +23,81 @@
                 <p>{{content}}</p>
                 <a href="#" class="btn btn-md">{{btnTitle}}</a>
             </div>
-
-            
         </div>
       </div>
     </div>
-  </section><!-- End About Section -->
+</section>
+
+<section class="bg-image">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 pt-4 pt-lg-0 order-2 order-lg-1 content text-center d-flex justify-content-center" data-aos="fade-right" data-aos-delay="100">
+          <h1 class="text-white">{{s2_title}}</h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <!-- <div class="col-lg-4 col-md-4 col-sm-6">
+          <div>
+            <img src="../../../assets/img/solution-kc.png" alt="">
+          </div>
+          <div class="mt-4 text-white">
+            <h2>Solution Expertise</h2>
+            <span>Having worked for small to the complex and critical web applications, we have proven parts to deliver the best web development projects.</span>
+          </div>
+        </div> -->
+        <div *ngFor="let Kesar of Kesars" class="col-lg-4 col-md-4 col-sm-6 mt-5">
+          <div>
+            <img src="../../../assets/img/{{Kesar.img}}" alt="">
+          </div>
+          <div class="mt-4 mb-4 text-white">
+            <h2 class="mt-2">{{ Kesar.title}}</h2>
+            <span> {{Kesar.subtitle}} </span>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Technology -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="technology-title">{{ technologyTitle}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let item of technologyImgs" class="col-lg-2 col-md-2 col-sm-4 mt-2">
+        <div class="te-col" [class.te-col-bg] = "item?.img_bg">
+          <img class="te-img" src="../../../assets/img/{{item?.img}}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end Technology -->
+
+<!-- our Products -->
+<section id="services" class="services">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="technology-title">{{ ourProductstitle}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let item of ourProducts" class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+        <div class="icon-box">
+          <div class="icon">
+            <img src="../../../assets/img/{{item.img}}" alt="" height="150" width="150">
+          </div>
+          <h4>{{item.title}}</h4>
+        </div>
+      </div>
+
+      
+    </div>
+    
+  </div>
+</section>
+<!-- end our Products -->

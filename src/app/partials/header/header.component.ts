@@ -11,7 +11,7 @@ export class HeaderComponent {
   menuItems = [
     {
        label: 'Home',
-       href: '/home',
+       href: '',
     },
     {
        subitem:true,
@@ -20,25 +20,25 @@ export class HeaderComponent {
        children: [
           {
             label: 'About Us',
-            href: '/about_us',
+            href: 'about_us',
           },
           {
             label: 'Privacy Policy',
-            href: '/privacy_policy',
+            href: 'privacy_policy',
           },
           {
             label: 'Tech Team',
-            href: '/tech_team',
+            href: 'tech_team',
           },
           {
             label: 'Career',
-            href: '/career',
+            href: 'career',
           }
         ],
     },
     {
        label: 'Services',
-       href: '/services',
+       href: 'services',
     },
     {
       label: 'www.chrcha.in',
@@ -46,11 +46,11 @@ export class HeaderComponent {
     },
     {
       label: 'Blog',
-      href:'#'
+      href:'blog'
     },
     {
       label: 'Contact Us',
-      href:'#'
+      href:'contact_us'
     }
    ];
    
