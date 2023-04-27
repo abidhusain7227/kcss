@@ -177,4 +177,64 @@ export class MiddleSectionComponent {
     },
   ]
 
+  OurServicesTitle = 'Our Services'
+  OurServicess = [
+    {
+      img:'our_s_01.png',
+      title:'Web Development',
+      subtitle:'Firstly we understand client’s business strategies and based on that we offer our tailor-made and secure IT solutions to enhance the business growth .To know more check our portfolio',
+    },
+    {
+      img:'our_s_02.png',
+      title:'Cross-Platform Apps',
+      subtitle:'We skillfully execute cross-platform development process right from requirements gathering, wire-frame , UX/UI mock-ups, development and testing to build quality & featured -rich apps.To know more check our portfolio',
+    },
+    {
+      img:'our_s_03.png',
+      title:'Cloud Services',
+      subtitle:'Based on our hands on experience in DevOps and Cloud environment, we help our clients gain the most from high-performing cloud environments.To know more check our portfolio',
+    },
+    {
+      img:'our_s_04.png',
+      title:'Mobile App Development',
+      subtitle:'We possess expertise in customize mobile applications development. Our work consist not just development but from conceptualization of idea to actual implementation as per the client’s expectations.To know more check our portfolio',
+    }
+  ]
+  industryPresenceTitle = 'Industry Presence'
+  industryPresenceSubtitle = 'Kesar Creatives provides a wide range of industrial solutions & services to assist companies transform their business into IT initiatives'
+  industryPresences = [
+    {
+      img:'i_1.png',
+      title:'E-commerce'
+    },
+    {
+      img:'i_2.png',
+      title:'Medical & Healthcare'
+    },
+    {
+      img:'i_3.png',
+      title:'Travel & Hospitality'
+    },
+    {
+      img:'i_4.png',
+      title:'Social Networking'
+    },
+    {
+      img:'i_5.png',
+      title:'Real Estate'
+    },
+    {
+      img:'i_6.png',
+      title:'Retail & Consumer Sector'
+    },
+    {
+      img:'i_7.png',
+      title:'Education / E-Learning'
+    },
+    {
+      img:'i_8.png',
+      title:'Financial Services'
+    }
+  ]
+
 }

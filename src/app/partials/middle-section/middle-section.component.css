@@ -36,3 +36,51 @@
     margin-right: 45px;
     margin-left: 45px;
 }
+
+
+.bg-color{
+    background-color: #01334c;
+}
+
+.web-bg{
+ background-color: #215a94;
+}
+.web-dev-bg{
+    background-color: #57aee3;
+}
+.web-hire-bg{
+    background-color: #8cac23;
+}
+.img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.web-img{
+    width: 400px;
+    height: 400px;
+    vertical-align: top;
+}
+
+.web-title{
+    text-align: center;
+    background-color: #2144947d;
+    height: 51px;
+    padding: 10px;
+    color: white;
+}
+.web-dev-title{
+    text-align: center;
+    background-color: #5695e3ab;
+    height: 51px;
+    padding: 10px;
+    color: white;
+}
+.web-hire-title{
+    text-align: center;
+    background-color: #33ac2466;
+    height: 51px;
+    padding: 10px;
+    color: white;
+
+}
