@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MiddleSectionComponent } from './middle-section/middle-section.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 
@@ -15,12 +16,13 @@ import { AppRoutingModule } from '../app-routing.module';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgImageSliderModule
   ],
   exports: [ 
     HeaderComponent,
     FooterComponent,
-    MiddleSectionComponent
+    MiddleSectionComponent,
    ]
 })
 export class PartialsModule { }

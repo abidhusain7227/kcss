@@ -12,6 +12,8 @@ import { CareerComponent } from './page/career/career.component';
 import { ServicesComponent } from './page/services/services.component';
 import { BlogComponent } from './page/blog/blog.component';
 import { ContactUsComponent } from './page/contact-us/contact-us.component';
+import { ImageSliderComponent } from './page/image-slider/image-slider.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { ContactUsComponent } from './page/contact-us/contact-us.component';
     CareerComponent,
     ServicesComponent,
     BlogComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ImageSliderComponent
   ],
   imports: [
     PartialsModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

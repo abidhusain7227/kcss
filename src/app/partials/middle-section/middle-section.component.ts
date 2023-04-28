@@ -236,5 +236,58 @@ export class MiddleSectionComponent {
       title:'Financial Services'
     }
   ]
+  imageSizeOurProfile={width: 300, height: 250, space: 3}
+  OurProfileTitle = 'Our Portfolio';
+  imgCollection: Array<object> = [
+    {
+      image: '../../../assets/img/our_profile_1.jpeg',
+      thumbImage: '../../../assets/img/our_profile_1.jpeg',
+      alt: 'Image 1',
+      title: 'Portfolio1',
+    },
+    {
+      image: '../../../assets/img/our_profile_2.jpeg',
+      thumbImage: '../../../assets/img/our_profile_2.jpeg',
+      alt: 'Image 1',
+      title: 'Portfolio2',
+    },
+    {
+      image: '../../../assets/img/our_profile_3.jpeg',
+      thumbImage: '../../../assets/img/our_profile_3.jpeg',
+      alt: 'Image 1',
+      title: 'Portfolio3',
+    },
+    {
+      image: '../../../assets/img/our_profile_4.jpeg',
+      thumbImage: '../../../assets/img/our_profile_4.jpeg',
+      alt: 'Image 1',
+      title: 'Portfolio4',
+    },
+    {
+      image: '../../../assets/img/our_profile_1.jpeg',
+      thumbImage: '../../../assets/img/our_profile_1.jpeg',
+      alt: 'Image 1',
+      title: 'Portfolio5',
+    },
+    {
+      image: '../../../assets/img/our_profile_2.jpeg',
+      thumbImage: '../../../assets/img/our_profile_2.jpeg',
+      alt: 'Image 1',
+      title: 'Portfolio6',
+    },
+    {
+      image: '../../../assets/img/our_profile_3.jpeg',
+      thumbImage: '../../../assets/img/our_profile_3.jpeg',
+      alt: 'Image 1',
+      title: 'Portfolio7',
+    },
+    {
+      image: '../../../assets/img/our_profile_4.jpeg',
+      thumbImage: '../../../assets/img/our_profile_4.jpeg',
+      alt: 'Image 1',
+      title: 'Portfolio8',
+    },
+    
+  ];
 
 }
