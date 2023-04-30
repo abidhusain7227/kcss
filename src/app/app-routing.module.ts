@@ -8,6 +8,7 @@ import { CareerComponent } from './page/career/career.component';
 import { ServicesComponent } from './page/services/services.component';
 import { BlogComponent } from './page/blog/blog.component';
 import { ContactUsComponent } from './page/contact-us/contact-us.component';
+import { BlogShowComponent } from './page/blog-show/blog-show.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,15 @@ const routes: Routes = [
   },
   {
     path:'blog',
+    component:BlogComponent
+  },
+  {
+    path:'blog/:id',
+    component:BlogShowComponent
+  },
+
+  {
+    path:'category/:category',
     component:BlogComponent
   },
   {

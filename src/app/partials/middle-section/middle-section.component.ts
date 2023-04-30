@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BlogsService } from 'src/app/Service/blogs.service';
 
 @Component({
   selector: 'app-middle-section',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./middle-section.component.css']
 })
 export class MiddleSectionComponent {
+  constructor(private blogsservice:BlogsService){}
    
   bannerTitle = 'ALL YOUR NEEDS @ 1 PLACE'
   bannerSubTitle = "You're having a business because you have goals. Here's how We can help you reach them!"
@@ -289,5 +291,21 @@ export class MiddleSectionComponent {
     },
     
   ];
+
+  blogtitle ='Our Blog'
+  blogsliderSize = {width: 500, height: 450, space: 3}
+  blogslider: Array<object> =[
+
+  ]
+  blogslider1:Array<any> =[]
+  ngOnInit():void {
+    this.blogslider = this.blogsservice.blogs
+    const blogs = this.blogsservice.blogs
+    for (let index = 0; index < blogs.length; index++) {
+      const element = blogs[index];
+      this.blogslider1.push(element)
+      
+    }
+  }
 
 }

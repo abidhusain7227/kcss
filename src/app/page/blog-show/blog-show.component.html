@@ -1,27 +1,17 @@
-<section class="bg-blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 pt-4 pt-lg-0 order-2 order-lg-1 content text-center d-flex justify-content-center" data-aos="fade-right" data-aos-delay="100">
-            <div class="middle-content">
-                <h3>{{title}}</h3>
-            </div>
-        </div>
-      </div>
-    </div>
-</section>
+
 
 <section>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12">
                 <div class="row">
-                    <div class="col-lg-12 blog-col mt-3" *ngFor="let item of blogs">
+                    <div class="col-lg-12 blog-col mt-3">
                         <div class="text-center">
-                            <a routerLink="/blog/{{item.id}}">
-                                <img src="{{item.image}}" alt="" height="340" width="600">
+                            <a routerLink="/blog/{{blog.id}}">
+                                <img src="{{blog.image}}" alt="" height="340" width="600">
                             </a>
                             <div class="blog-date">
-                                <span>{{ item.date }}</span>
+                                <span>{{ blog.date }}</span>
                             </div>
                         </div>
                         <div class="blog-p-l">
@@ -29,19 +19,19 @@
                                 <span>
                                     <i class="fa fa-folder"></i>
                                     Posted in
-                                    <a routerLink="/category/{{item.posted_in}}" class="tag">
-                                        {{item.posted_in}}
+                                    <a routerLink="/category/{{blog.posted_in}}" class="tag">
+                                        {{blog.posted_in}}
                                     </a>
                                 </span>
                             </div>
                             <div class="mt-3">
-                                <a routerLink="/blog/{{item.id}}">
-                                    <h2>{{ item.title }}</h2>
+                                <a routerLink="/blog/{{blog.id}}">
+                                    <h2>{{ blog.title }}</h2>
                                 </a>
                             </div>
                             <div class="mt-2">
                                 <p>
-                                    {{ item.content }}
+                                    {{ blog.content }}
                                 </p>
                             </div>
                         </div>

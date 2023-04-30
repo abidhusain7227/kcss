@@ -1,0 +1,40 @@
+.bg-about{
+    background-image: url(../../../assets/img/blog/background-header-about-kcc.jpg);
+    background-position: center 30%;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    height: 260px;
+}
+.bg-about h3{
+    top: 55px;
+    position: relative;
+}
+.bg-about-color{
+    background-color: #01334c;
+}
+p{
+    font-size: 17px;
+}
+.our-vision-title-color{
+    color: #006198;
+}
+.line{
+    height: 1.5px;
+    width: 100px;
+    display: block;
+    background: #016198;
+}
+.mission-line{
+    height: 2px;
+    width: 100px;
+    display: block;
+    background: white;
+
+}
+.bg-color-our-mission{
+    background-color: #54c971;
+}
+.border-bottom{
+    border-bottom: 1px solid rgb(173, 173, 173);
+}

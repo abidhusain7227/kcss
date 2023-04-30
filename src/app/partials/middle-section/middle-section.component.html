@@ -188,13 +188,46 @@
     </div>
     <ng-image-slider 
     [imageSize]="imageSizeOurProfile" 
+    [imagePopup]="false"
     [slideImage]="2"
     [autoSlide]="true"
     [infinite]="true"
-    [images]="imgCollection" #nav></ng-image-slider>
+    [images]="imgCollection" #nav>
+  </ng-image-slider>
+  </div>
+</section>
+<!-- blog -->
+<section>
+  <div class="container" data-aos="fade-up">
     <div class="row">
-      <div class="col-lg-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in">
+      <div class="col-lg-12 text-center mb-4">
+        <h1>
+          {{blogtitle}}
+        </h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-sm-12">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+          <div class="carousel-item active" [class.active] = "item.id == '1'" *ngFor="let item of blogslider1">
+            <!-- {{item.id}} -->
+            <a routerLink="/blog/{{item.id}}">
+              <img class="d-block w-100" src="{{item.image}}" alt="First slide">
+            </a>
+          </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
+<!-- end blog -->

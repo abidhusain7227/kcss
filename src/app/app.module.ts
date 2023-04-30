@@ -14,6 +14,7 @@ import { BlogComponent } from './page/blog/blog.component';
 import { ContactUsComponent } from './page/contact-us/contact-us.component';
 import { ImageSliderComponent } from './page/image-slider/image-slider.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { BlogShowComponent } from './page/blog-show/blog-show.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     ServicesComponent,
     BlogComponent,
     ContactUsComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    BlogShowComponent
   ],
   imports: [
     PartialsModule,

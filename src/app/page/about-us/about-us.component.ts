@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
-
+  title = 'Get To Know Us Better!'
+  ourStory = 'Our Story';
 }
