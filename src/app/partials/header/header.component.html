@@ -2,7 +2,7 @@
 <header id="header" class=" p-0">
     <div class="top-header p-2">
         <div class="container d-flex align-items-center justify-content-lg-between">
-            <div>
+            <div class="sm-font-11">
                 Call us: 
                 <span>(+91) 90 167 43 155</span>
             </div>
@@ -17,25 +17,24 @@
         </div>
     </div>
     <div class="container d-flex align-items-center justify-content-lg-between">
-        <div class="header m-2">
+        <div class="header m-2 sm-font-11">
             <h1 class="logo me-auto me-lg-0">
-                <a href="index.html" class="bg-whight">
+                <a routerLink="" class="bg-whight">
                     {{logoTitle}}
                 </a>
             </h1>
             <span>
                 {{logoSubtitle}}
             </span>
-
         </div>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
+        <nav id="navbar" class="navbar order-last order-lg-0" [ngClass]="{'navbar-mobile':mobile_view}">
             <ul>
-                <li *ngFor="let item of menuItems"  [class.dropdown] = "item.subitem">
+                <li *ngFor="let item of menuItems"  [class.dropdown] = "item.subitem"   (click)="item.subitem && dropdown()" >
                     <a 
-                    routerLink="{{item.href}}" 
+                    routerLink="{{item.href}}"
                     [ngClass]="{'nav-link':!item.subitem,'scrollto':!item.subitem}"
                     routerLinkActive="active" 
                     [routerLinkActiveOptions]={exact:true} 
@@ -43,7 +42,7 @@
                         <span> {{ item.label }} </span>
                         <i *ngIf="item.subitem" class="bi bi-chevron-down"></i>
                     </a>
-                    <ul *ngIf="item.subitem">
+                    <ul *ngIf="item.subitem" [ngClass]="{'dropdown-active':dropdownActive}">
                         <li *ngFor="let subitem of item.children">
                             <a 
                             routerLink="{{subitem.href}}"
@@ -57,7 +56,8 @@
                     </ul>
                 </li>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
+            <i class="bi  mobile-nav-toggle" [ngClass]="{'bi-x':mobile_view,'bi-list':!mobile_view}" (click)="navMobile()"></i>
+        
         </nav><!-- .navbar -->
 
     <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a> -->

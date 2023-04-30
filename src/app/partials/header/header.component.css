@@ -18,3 +18,24 @@
     color: #151515;
     text-decoration: none;
   }
+
+@media (max-width: 390px) {
+  #header .top-header .social-links a{
+    padding: 3px 0;
+    width: 25px;
+    height: 25px;
+  }
+  .social-links{
+    margin-left: 50px;
+  }
+  .sm-font-11{
+    font-size: 11px;
+  }
+  .mobile-nav-toggle.bi-list{
+    font-size: 35px;
+    right: -150px !important;
+  }
+  .navbar-mobile .mobile-nav-toggle{
+    position: fixed !important;
+  }
+}

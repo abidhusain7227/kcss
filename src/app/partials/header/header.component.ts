@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  mobile_view = false;
+  dropdownActive =false
+  navMobile(){
+    console.log('abb')
+    this.mobile_view = !this.mobile_view
+  }
+  dropdown(){
+    this.dropdownActive = !this.dropdownActive
+  }
   logoTitle = 'Kesar Creatives';
   logoSubtitle = 'Create Your Business Software'
   menuItems = [
