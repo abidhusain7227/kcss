@@ -53,3 +53,12 @@ a:hover{
     right: 30px;
 
 }
+
+@media (max-width: 991px) {
+    img{
+        width: 100%;
+    }
+    section{
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,35 @@
+.bg-blog{
+    background-color: #f1f1f1;
+    background-position: center 30%;
+    background-size: cover;
+    color: black;
+    text-align: center;
+}
+.color-red{
+    color: red;
+}
+.color-green{
+    color:#008000 ;
+}
+.line{
+    height: 1.5px;
+    width: 100px;
+    display: block;
+    background: #016198;
+    position: absolute;
+    right: 287px;
+}
+.contect-number{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.icon{
+    font-size: 40px;
+    color: #acacac;
+}
+@media (min-width: 768px){
+    .line{
+        right: 125px;
+    }
+}
